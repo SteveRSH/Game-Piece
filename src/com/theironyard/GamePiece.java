@@ -1,5 +1,7 @@
 package com.theironyard;
 
+import java.util.Random;
+
 public class GamePiece {
     int positionX;
     int positionY;
@@ -49,16 +51,18 @@ public class GamePiece {
 //Add movement to the game piece
 //Add a move() method (returns void) that takes a new x and y position. Set the instance variables to the parameters.
 
-    public void move(int x, int y) {
+    public void move() {
 
-        Random X = new Random();
-        this.positionX = x.nextInt();
-        Random Y = new Random();
-        this.positionY = y.nextInt();
+
+
+
 
         if (this.frozen == false) {
 
-
+            Random X = new Random();
+            this.positionX = X.nextInt();
+            Random Y = new Random();
+            this.positionY = Y.nextInt();
 
 //            this.positionX = x;
 //            this.positionY = y;

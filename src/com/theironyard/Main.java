@@ -9,7 +9,7 @@ public class Main {
         //Test the freeze, unfreeze and move methods in the public static void main(String[] args) method of Main.java.
 
 	GamePiece myGamePiece = new GamePiece ();
-        myGamePiece.move(3, 6);
+        myGamePiece.move();
         myGamePiece.freeze();
         myGamePiece.unfreeze();
     }
